@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>리스트로 메뉴 만들기</title>
+<style>
+#menubar {
+	background : olive;
+}
+#menubar ul { /* 여백과 패딩 모두 0 */
+	margin : 0;
+	padding : 0;
+	width : 567px; /* 모든 아이템(<li>)을 한 줄에 품을 수 있는 폭 */
+}
+#menubar ul li {
+	display : inline-block; /* 새 줄로 넘어가지 않게 */
+	list-style-type : none; /* 마커 삭제 */
+	padding : 0px 15px; /* top=bottom=0, left=right=15px */ 
+}
+#menubar ul li a {
+	color : white;
+  	text-decoration : none; /* 링크 보이지 않게 */
+}
+#menubar ul li a:hover {
+ 	color : violet;  /* 마우스 올라 갈 때 색 */
+}
+</style>
+</head>
+<body>
+<nav id="menubar">
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Espresso</a></li>
+		<li><a href="#">Cappuccino</a></li>
+		<li><a href="#">Cafe Latte</a></li>
+		<li><a href="#">F.A.Q</a></li>
+	</ul>
+</nav>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마우스 호버효과 예제</title>
+    <style>
+        button {
+            background-color: #4CAF50; /* 버튼 배경 색상 변경 */
+            color: white; /* 버튼 텍스트 색상 변경 */
+            padding: 15px 32px; /* 버튼 내부 여백 변경 */
+            text-align: center; /* 텍스트 정렬 설정 */
+            text-decoration: none; /* 텍스트에 밑줄 제거 */
+            display: inline-block; /* 인라인 블록 요소로 변경 */
+            font-size: 16px; /* 폰트 크기 변경 */
+            margin: 4px 2px; /* 여백 설정 */
+            cursor: pointer; /* 커서 설정 */
+            border-radius: 10px; /* 버튼 모서리 둥글게 만듦 */
+            transition-duration: 0.4s; /* 호버 효과 지속 시간 설정 */
+        }
+        button:hover {
+            background-color: white; /* 호버 시 배경 색상 변경 */
+            color: black; /* 호버 시 텍스트 색상 변경 */
+            border: 2px solid #4CAF50; /* 호버 시 테두리 추가 */
+        }
+    </style>
+</head>
+<body>
+    <button>호버하세요</button>
+</body>
+</html>
+<!-- 예제 코드 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우주 모험</title>
+    <style>
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #666;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>우주 모험</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">홈</a></li>
+            <li><a href="#spaceship">우주선 탑승실</a></li>
+            <li><a href="#space">외부 우주</a></li>
+        </ul>
+    </nav>
+    
+    <section id="home">
+        <h2>환영합니다!</h2>
+        <p>우주 모험을 시작합니다. 이곳은 우주 모험에 대한 정보를 제공합니다.</p>
+    </section>
+    
+    <section id="spaceship">
+        <h2>우주선 탑승실</h2>
+        <p>우주선의 내부를 탐험해보세요. 여기는 우주선의 모습을 보여줍니다.</p>
+    </section>
+    
+    <section id="space">
+        <h2>외부 우주</h2>
+        <p>우주선 외부의 아름다운 풍경을 감상하세요. 여기는 우주의 끝을 만날 수 있습니다.</p>
+    </section>
+    
+    <footer>
+        <p>우주 모험 페이지 © 2024</p>
+    </footer>
+</body>
+</html>
